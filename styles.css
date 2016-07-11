@@ -1,0 +1,92 @@
+body {
+  font-family: helvetica, arial, sans-serif;
+  padding: 50px;
+}
+
+/*Common styles*/
+
+a {
+  color: blue;
+  display: block;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+h2 {
+  text-align: center;
+}
+
+/*Before CSS3 */
+
+.article {
+  border: 3px solid black;
+  width: 35%;
+}
+
+.article a {
+  padding-bottom: 15px;
+}
+
+
+.article p {
+  margin: 0;
+  padding: 0 15px;
+}
+
+.article h2 {
+  margin: 0;
+}
+
+.corner {
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+
+.one {
+  background-image: url('corner_tl.gif');
+  background-position: top left;
+  left: -3px;
+  top: -3px;
+}
+
+.two {
+  background-image: url('corner_tr.gif');
+  background-position: top right;
+  /*Also added padding top to the heading*/
+  padding-top: 15px;
+  right: -21px;
+  top: -21px;
+}
+
+.three {
+  background-image: url('corner_bl.gif');
+  background-position: bottom left;
+  bottom: -6px;
+  /*Padding*/
+  padding: 15px;
+  left: 0;
+}
+
+.four {
+  background-image: url('corner_br.gif');
+  background-position: bottom right;
+  bottom: -15px;
+  right: -21px;
+}
+
+/*After CSS3 */
+
+article {
+  border-radius: 10px;
+  border: 3px solid black;
+  padding: 15px;
+  margin-top: 20px;
+  width: 35%;
+}
